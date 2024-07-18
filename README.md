@@ -1,29 +1,48 @@
-<strong> **DO NOT DISTRIBUTE OR PUBLICLY POST SOLUTIONS TO THESE LABS. MAKE ALL FORKS OF THIS REPOSITORY WITH SOLUTION CODE PRIVATE. PLEASE REFER TO THE STUDENT CODE OF CONDUCT AND ETHICAL EXPECTATIONS FOR COLLEGE OF INFORMATION TECHNOLOGY STUDENTS FOR SPECIFICS. ** </strong>
+# Hotel Scheduling Application
+## Overview
+This project is a backend solution for the Landon Hotel scheduling application, using the Spring Framework and Angular. It includes multithreading, language translation, time zone messaging, currency exchange display, and containerization with Docker for cloud deployment.
 
-# WESTERN GOVERNOR UNIVERSITY 
-## D387 – ADVANCED JAVA
-Welcome to Advanced Java! This is an opportunity for students to write multithreaded object-oriented code using Java frameworks and determine how to deploy software applications using cloud services.
+## Competencies
+**Writes Multithreaded Code:** Develops multithreaded, object-oriented code using Java frameworks.
 
-FOR SPECIFIC TASK INSTRUCTIONS AND REQUIREMENTS FOR THIS ASSESSMENT, PLEASE REFER TO THE COURSE PAGE.
-## BASIC INSTRUCTIONS
-For this assessment, you will modify a Spring application with a Java back end and an Angular front end to include multithreaded language translation, a message at different time zones, and currency exchange. Then, build a Docker image of the current multithreaded Spring application and containerize it using the supporting documents provided in this task.
+**Deploying Applications with Cloud Services:** Deploys software applications using cloud services.
 
+## Introduction
+This project involves modifying a Spring application to include multithreading for language translation, time zone messaging, and currency exchange. The application is containerized using Docker for deployment.
 
-## SUPPLEMENTAL RESOURCES 
-1.	How to clone a project to IntelliJ using Git?
+## Scenario
+You are tasked with updating the Landon Hotel scheduling application to meet new requirements, including localization, currency display, and time zone messaging.
 
-> Ensure that you have Git installed on your system and that IntelliJ is installed using [Toolbox](https://www.jetbrains.com/toolbox-app/). Make sure that you are using version 2022.3.2. Once this has been confirmed, click the clone button and use the 'IntelliJ IDEA (HTTPS)' button. This will open IntelliJ with a prompt to clone the proejct. Save it in a safe location for the directory and press clone. IntelliJ will prompt you for your credentials. Enter in your WGU Credentials and the project will be cloned onto your local machine.  
+## Requirements
+### Setup
+**GitLab Integration:**
+Clone the project to the IDE.
+Commit and push changes regularly.
+Submit the GitLab repository URL and the repository branch history.
 
-2. How to create a branch and start Development?
+## Implementation
+### Localization and Internationalization 
 
-- GitLab method
-> Press the '+' button located near your branch name. In the dropdown list, press the 'New branch' button. This will allow you to create a name for your branch. Once the branch has been named, you can select 'Create Branch' to push the branch to your repository.
+- **Resource Bundles:**
+Create resource bundles for English and French.
+- **Welcome Message:** Display welcome messages in both languages using different threads.
 
-- IntelliJ method
-> In IntelliJ, Go to the 'Git' button on the top toolbar. Select the new branch option and create a name for the branch. Make sure checkout branch is selected and press create. You can now add a commit message and push the new branch to the local repo.
+### Currency Display
 
-## SUPPORT
-If you need additional support, please navigate to the course page and reach out to your course instructor.
-## FUTURE USE
-Take this opportunity to create or add to a simple resume portfolio to highlight and showcase your work for future use in career search, experience, and education!
+- Display reservation prices in USD, CAD, and EUR.
 
+### Time Zone Messaging
+
+- **Time Conversion:** Convert times between ET, MT, and UTC.
+- **Display Message:** Show the time for an online live presentation in ET, MT, and UTC.
+
+## Docker and Cloud Deployment
+### Dockerfile Creation
+
+- Build a Dockerfile to create a single image with all code modifications.
+- Commit and push the final Dockerfile to GitLab.
+
+### Testing Docker
+
+- Create a Docker image of the multithreaded Spring application.
+- Run the Docker image in a container.
